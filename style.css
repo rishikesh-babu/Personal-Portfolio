@@ -81,7 +81,6 @@ body {
     .profile {
         justify-content: center;
         gap: 3rem;
-        font-size: 10px;
     }
 }
 @media screen and (max-width: 412px) {

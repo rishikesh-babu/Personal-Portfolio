@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #4facfe, #00f2fe);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.main {
+    padding: 25px;
+    max-width: 60rem;
+    background-color: #222222;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 46px 8px black;
+}
+.main .navbar-brand {
+    border-radius: 5px;
+    color: #00f2fe;
+    /* background-color: rgb(255, 255, 255); */
+}
+.main #navbarNav a {
+    color: #00f2fe;
+}
+/* .main .navbar-toggler {
+    background-color: rgb(125, 125, 125);
+}
+.main .navbar-toggler-icon {
+    background-color: black;
+} */
+.profile {
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+}
+
+@media screen and (max-width: 820px) {
+    .profile {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+.profileimage {
+    /* box-shadow: 1px 1px 100px 12px #00f2fe; */
+    border-radius: 50%;
+    /* width: 300px; */
+    /* height: 300px; */
+}
+
+.profileAbout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileAbout h1 {
+    color: #00f2fe;
+}
+
+.profile img {
+    box-shadow: 1px 1px 100px 12px #00f2fe;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width: 736px) {
+    .profile img  {
+        width: 150px;
+        height: 150px;
+    }
+    .profile {
+        justify-content: center;
+        gap: 3rem;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 412px) {
+    .profile img  {
+        width: 100px;
+        height: 100px;
+    }
+}
+.profile b {
+    color: aqua;
+}
+
+.profile button {
+    width: fit-content;
+    padding-inline: 17px;
+    padding-block: 5px;
+    border: 1px solid black;
+    border-radius: 16px;
+    background-color: aqua;
+    align-self: center  ;
+}
+
+.profile button:active {
+    transform: scale(.97);
+}
+
+/* About Section */
+.aboutme .aboutmedescription {
+    font-size: 20px;
+}
+
+.skills-projects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.skills-projects ul li {
+    font-size: 20px;
+}
+@media screen and (max-width: 735px) {
+    .skills-projects  {
+       flex-direction: column;
+    }
+}

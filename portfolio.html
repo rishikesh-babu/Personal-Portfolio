@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Portfolio Web Site</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg "> <!--  -->
+        <div class="container-fluid">
+            <a class="navbar-brand portfolio" href="./index.html"> <!-- Portfolio --></a>
+            <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutme.html    ">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./portfolio.html">Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="projects">
+        <h2 class="projectheading">Projects</h2>
+        <!-- <ul>
+            <li>
+                <a href="https://form-validation-demo-intraniz.netlify.app/" target="_blank">
+                    Sample Form validation
+                </a>
+            </li>
+            <li>
+                <a href="https://online-calculator-demo-intrainz.netlify.app/" target="_blank">
+                    Online calculator
+                </a>
+            </li>
+            <li>
+                <a href="https://rishikesh-babu.github.io/Bootstrap-Module-Assignment/" target="_blank">
+                    Online Shoping Site
+                </a>
+            </li>
+        </ul> -->
+
+        <!-- <div id="categories">
+            <button onclick="filter('all')">All</button>
+            <button onclick="filter('web')">Web Development</button>
+            <button onclick="filter('mobile')">Mobile App</button>
+            <button onclick="filter('data')">Data Science</button>
+        </div> -->
+
+        <div class="project-image-container">
+            <div onclick="handlervalidation()" class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./Screenshot 2024-08-22 015447.png" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Form validation </h3>
+                    <p class="card-text"></p>
+                    <!-- <a href="https://form-validation-demo-intraniz.netlify.app/" class="btn btn-primary"
+                        target="_blank">Check
+                    </a> -->
+                </div>
+            </div>
+            <div onclick="handlerCalculator()" class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./Screenshot 2024-08-22 015459.png" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Online Calculator </h3>
+                    <p class="card-text"></p>
+                    <!-- <a href="https://online-calculator-demo-intrainz.netlify.app/" class="btn btn-primary"
+                        target="_blank">Check
+                    </a> -->
+                </div>
+            </div>
+            <div onclick="handlerShop()" class="card" style="width: 18rem;">
+                <img class="card-img-top" src="./Screenshot 2024-08-22 015520.png" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-title">Shoping Web site</h3>
+                    <p class="card-text"></p>
+                    <!-- <a href="https://rishikesh-babu.github.io/Bootstrap-Module-Assignment/" class="btn btn-primary"
+                        target="_blank">Check
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

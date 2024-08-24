@@ -4,36 +4,28 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #4facfe, #00f2fe);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+    /* background: linear-gradient(to bottom, #4facfe, #00f2fe); */
+    /* height: 100vh; */
+    padding: 25px;
+    /* width: 100vh; */
+    /* height: 100vh; */
+    background-color: #222222;
+    color: white;
+    font-size: 23px;
 }
 
 
 .main {
-    padding: 25px;
-    max-width: 60rem;
-    background-color: #222222;
-    color: white;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 0px 0px 46px 8px black;
 }
-.main .navbar-brand {
-    border-radius: 5px;
-    color: #00f2fe;
-    /* background-color: rgb(255, 255, 255); */
-}
+
 .main #navbarNav a {
     color: #00f2fe;
 }
-/* .main .navbar-toggler {
-    background-color: rgb(125, 125, 125);
-}
-.main .navbar-toggler-icon {
-    background-color: black;
-} */
+
+
 .profile {
     /* margin: 2rem; */
     display: flex;
@@ -76,21 +68,24 @@ body {
 }
 
 @media screen and (max-width: 736px) {
-    .profile img  {
+    .profile img {
         width: 150px;
         height: 150px;
     }
+
     .profile {
         justify-content: center;
         gap: 3rem;
     }
 }
+
 @media screen and (max-width: 412px) {
-    .profile img  {
+    .profile img {
         width: 100px;
         height: 100px;
     }
 }
+
 .profile b {
     color: aqua;
 }
@@ -102,7 +97,7 @@ body {
     border: 1px solid black;
     border-radius: 16px;
     background-color: aqua;
-    align-self: center  ;
+    align-self: center;
 }
 
 .profile button:active {
@@ -110,20 +105,43 @@ body {
 }
 
 /* About Section */
-.aboutme .aboutmedescription {
-    font-size: 20px;
+.aboutme .aboutmeheading,
+.skills .skillsheading {
+    text-align: center;
 }
 
-.skills-projects {
+.skills ul li {
+    font-size: 27px;
+}
+
+.projects .project-image-container {
     display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-around;
 }
-.skills-projects ul li {
-    font-size: 20px;
+
+.project-image-container .card {
+    background-color: #000000;
+    transition: box-shadow .5s ease-in-out;
+    
 }
-@media screen and (max-width: 735px) {
-    .skills-projects  {
-       flex-direction: column;
-    }
+
+.project-image-container .card:hover {
+    box-shadow: 0px 0px 36px 0px #00f2fe;
+    transform: scale(1.1);
+}
+
+.projects .project-image-container img {
+    height: 13rem;
+}
+
+.projects .project-image-container .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-image-container .btn {
+    width: 10rem;
 }

@@ -14,7 +14,6 @@ body {
     font-size: 23px;
 }
 
-
 .main {
     border: 1px solid black;
     border-radius: 20px;
@@ -38,8 +37,6 @@ body {
         flex-wrap: wrap;
     }
 }
-
-
 
 .profileimage {
     /* box-shadow: 1px 1px 100px 12px #00f2fe; */
@@ -123,8 +120,6 @@ body {
 
 .project-image-container .card {
     background-color: #000000;
-    transition: box-shadow .5s ease-in-out;
-    
 }
 
 .project-image-container .card:hover {
@@ -144,4 +139,36 @@ body {
 
 .project-image-container .btn {
     width: 10rem;
+}
+
+/* Contact me section */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.contact-container .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-container button {
+    width: fit-content;
+    margin-top: 10px;
 }

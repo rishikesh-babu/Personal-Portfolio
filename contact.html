@@ -16,7 +16,7 @@
 
 <body>
     <!-- <div class="main""> -->
-    <nav class="navbar navbar-expand-lg "> <!--  -->
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand portfolio" href="./index.html"> <!-- Portfolio --></a>
             <button class="navbar-toggler bg-light navbar-light" type="button" data-bs-toggle="collapse"
@@ -46,31 +46,32 @@
         </div>
     </nav>
 
-    <div class="profile ">
-        <span class="profileimage ">
-            <img src="./IMG20230604134507.jpg" alt="">
-        </span>
-
-        <div class="profileAbout">
-            <h3>Hello it's me </h3>
-            <h1>Rishikesh Babu</h1>
-            <h3 class="fullstackdevoloper">And I'm a <b>Full Stack Devoloper </b> </h3>
-            <p>
-                Hello! My name is Rishikesh Babu, and I am a Full Stack Developer with a keen interest in creating
-                innovative and user-friendly applications. Over the course of my career, I’ve developed a variety of
-                projects, including a validation form, an online calculator, and a comprehensive shopping website.
-                My passion lies in developing solutions that not only meet user needs but also enhance their overall
-                experience. I’m always excited to take on new challenges and continue growing my skills in the
-                ever-evolving world of technology. <a href="./aboutme.html">More about...</a>
-            </p>
-
-            <button class="cvdownload">
-                <h5>Download CV</h5>
-            </button>
-
+    <form onsubmit="validation()" class="contact-container">
+        <h2>Contact Me</h2>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input placeholder="Enter the name" type="text" required>
         </div>
-    </div>
-    <!-- </div> -->
+        <div class="form-group">
+            <label for="name">Email</label>
+            <input placeholder="Enter email" type="email" required>
+        </div>
+        <div class="form-group">
+            <label for="name">Message</label>
+            <textarea placeholder="Send a message" required></textarea>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+            <button type="reset" class="btn btn-primary">
+                Reset Button
+            </button>
+        </div>
+
+        <div class="resultvalidation"></div>
+    </form>
 </body>
 <script src="./script.js"></script>
+
 </html>
